@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.IgalleryDao">
+
+	<select id="list" resultType="com.example.demo.dto.galleryDto">
+		select * from gallery order by
+		gallery_idx desc
+	</select>
+	<select id="re_list" resultType="com.example.demo.dto.galleryDto">
+		select * from gallery order by
+		gallery_date desc limit 3 
+	</select>
+	<insert id="image_insert"
+		parameterType="com.example.demo.dto.galleryDto">
+		INSERT INTO GALLERY(gallery_title,gallery_img,gallery_contents,gallery_date)
+		VALUES(
+		'${ gallery_title }',
+		'${ gallery_img }',
+		'${ gallery_contents }',
+		NOW()
+		)
+	</insert>
+	<delete id="gallery_delete">
+	  DELETE FROM gallery 
+	  WHERE gallery_idx=#{ param1 }
+	</delete>
+</mapper>

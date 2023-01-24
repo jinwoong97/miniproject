@@ -1,0 +1,94 @@
+.maincontents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*overflow 속성 적용*/
+    overflow: auto;
+    height: 95%;
+}
+.gray-text {
+    padding: 7px;
+    margin: 10px;
+    width: 80%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 1%;
+}
+.album-photo {
+    width: 90%;
+}
+.album-photo img{
+    width: 90%;
+}
+.detail {
+    padding: 7px;
+    margin: 10px;
+    width: 80%;
+}
+.section2photo textarea {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+.photoimg {
+    width: 25%;
+    height: 157px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.photoimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.writeButton {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.asidePhoto {
+    position: relative;
+    width: 28%;
+    float: left;
+    height: 95%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+.sectionPhoto {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 95%;
+}
+.profilePhoto {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+.profilePhoto div input {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;    
+}
+.profilePhoto img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.photoContents {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+.reviseBtn {
+    margin-right: 10px;
+}

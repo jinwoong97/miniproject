@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.example.demo.dao.IuserDao">
+	<!-- 로그인 -->
+	<select id="login" resultType="_int">
+		select count(*) from users where
+		user_id = #{param1} and user_pw = #{param2}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="join_user" parameterType="com.example.demo.dto.userDto">
+		insert into
+		users(user_name,user_id,user_pw,user_phone,user_address,user_gender,user_birthday,user_joindate,user_email)
+		values(#{user_name},#{user_id},#{user_pw},#{user_phone},#{user_address},#{user_gender},#{user_birthday},NOW(),#{user_email})
+	</insert>
+	
+	<!-- 아이디 중복체크 -->
+	<select id="idcheck" resultType="_int">
+		select count(*) from member where member_id = #{param1}
+	</select>
+	
+	<!-- 회원정보 띄우기 -->
+	<select id="user_list" resultType="com.example.demo.dto.userDto">
+		select * from users where user_id = #{param1}
+	</select>
+</mapper>

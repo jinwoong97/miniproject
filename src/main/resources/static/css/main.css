@@ -1,0 +1,164 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+  }
+  /* 컨테이너 */
+  .container {
+      height: 800px;
+      border: 1px solid black;
+      margin-bottom: 100px;
+      padding-top: 20px;
+      border-radius: 20px;
+  }
+  /* 네비바 */
+  .navbar {
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  /* 메뉴바 바디 */
+  .offcanvas offcanvas-end {
+      width: 200px;
+  }
+  /* aside(프로필) */
+  .asideMain {
+    position: relative;
+    width: 28%;
+    float: left;
+    height: 95%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .profile img {
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .profile {
+      display: flex;
+      flex-flow: column;
+      padding: 5px;
+  }
+  .profile div input {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 20px;
+  }
+  .addfriend {
+    height: 40px;
+    border-radius: 10px;
+  }
+  #intro {
+    height: 70px;
+  }
+  /* section */
+  .sectionMain {
+      position: relative;
+      float: right;
+      width: 70%;
+      height: 100%;
+      margin-bottom: 20px;
+      padding: 5px;
+  }
+  .section1 {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+  .section1 textarea {
+      width: 100%;
+      border-radius: 20px;
+  }
+  .section2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.section2 textarea {
+    width: 100%;
+    border-radius: 20px;
+}
+/* gallery(사진첩) */
+.gallery h5 {
+  writing-mode: vertical-lr;
+}
+.S4imgbox {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+  }
+.S4imgbox p {
+    text-align: center;
+}
+  .S4imgbox .S4h2{
+    margin-top: 100px;
+    flex: 1 100%;
+    text-align: center;
+  }
+  .S4imgbox .S4pbox{
+    flex: 1 100%;
+  }
+  .S4imgbox .S4pbox p{
+    text-align: center;
+    color: gray;
+  }
+  .S4imgbox .S4img1 {
+    overflow: hidden;
+    flex: 1 30%;
+  }
+  .S4imgbox .S4img2 {
+    overflow: hidden;
+    flex: 1 30%;
+  }
+  .S4imgbox .S4img3 {
+    overflow: hidden;
+    flex: 1 30%;
+  }
+  .S4imgbox .S4img4 {
+    overflow: hidden;
+    flex: 1 30%;
+  }
+  .S4imgbox .S4img1-1{
+    overflow: hidden;
+    height: 200px;
+  }
+  .S4imgbox .S4img2-1{
+    overflow: hidden;
+    height: 200px;
+  }
+  .S4imgbox .S4img3-1{
+    overflow: hidden;
+    height: 200px;
+  }
+  .S4imgbox .S4img4-1{
+    overflow: hidden;
+    height: 200px;
+  }
+  .S4imgbox a{
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.74);
+    border-radius: 20px;
+  }
+  .S4imgbox p{
+    margin-bottom: 0;
+  }
+  .S4imgbox figure{
+    margin-bottom: 0;
+  }
+  .S4imgbox .S4pbox{
+    margin-bottom: 80px;
+  }
+  .gimg1, .gimg2, .gimg3, .gimg4 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid black;
+      border-radius: 20px;
+  } 
+  
+  .user_name {
+  	display:flex;
+  	justify-content:center;
+  	margin-bottom:20px;
+  	font-size:25px;
+  }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.example.demo.dao.IdiaryDao">
+
+	<select id="list" resultType="com.example.demo.dto.diaryDto">
+		select diary.* from diary inner join users on diary.diary_user_id = users.user_id 
+		where users.user_id = #{ param1 }  
+	</select>
+	
+	<insert id="diary_write">
+		insert into diary(diary_user_id,diary_title,diary_contents,diary_folder_idx,diary_date)
+		values(#{ param1 },#{ param2 },#{ param3 },#{ param4 }, NOW())
+	</insert>
+	
+	<delete id="diary_delete">
+	  DELETE FROM diary 
+	  WHERE diary_idx=#{ param1 }
+	</delete>
+	
+	<select id="viewDto" resultType="com.example.demo.dto.diaryDto">
+		select * from diary where diary_idx=#{ param1 }
+	</select>
+	
+	<update id="diary_modifyAction" parameterType="com.example.demo.dto.diaryDto">
+		update diary set 
+		diary_title=#{diary_title},
+		diary_contents=#{diary_contents}
+		WHERE diary_idx=#{diary_idx}
+	</update>
+	
+	<select id="folder_list" resultType="com.example.demo.dto.diaryDto">
+		select diary.* from diary inner join users on diary.diary_user_id = users.user_id 
+		where users.user_id = #{ param1 } and diary.diary_folder_idx = #{ param2 }
+	</select>
+	
+</mapper>

@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.logindiv {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+.logindiv input {
+    width: 60%;
+    margin-bottom: 10px;
+}
+.logo {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+#login {
+    width: 60%;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+}
+#join {
+    width: 60%;
+    background-color: lightpink;
+    border-color: transparent;
+}
+#join a {
+    text-decoration: none;
+    color: white;
+}
+.account {
+    display: block;
+    margin-bottom: 3px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+#alert {
+    border-color: transparent;
+}
+.contents {
+	font-family: 'Noto Sans KR', sans-serif;
+	width: 60%;
+	margin: 40px 20% 40px 20%;
+	border-radius: 5px;
+}
+
+#insert input[type=text],input[type=text],input[type=email],input[type=password]  {
+	border: 1px solid rgb(238, 238, 238);
+	padding: 10px;
+	border-radius: 5px;
+	width: 60%;
+	margin-bottom: 15px;
+	margin-left: 20%;
+}
+
+.contents p {
+	text-align: left;
+	margin-top: 10px;
+	color: gray;
+}
+
+#insert {
+	color: gray;
+}
+
+.check {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-left: 20%;
+}
+
+#checkForm textarea {
+	font-family: 'Noto Sans KR', sans-serif;
+	border: 1px solid rgb(238, 238, 238);
+	border-radius: 5px;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 10px;
+}
+
+#joinbtn {
+	padding: 10px;
+	border: 1px solid rgb(238, 238, 238);
+	border-radius: 5px;
+	width: 60%;
+	background-color: white;
+	color: gray;
+	margin-left: 20%
+}
+
+.contents hr {
+	margin: 40px 20% 40px 20%;
+}
+
+#genderbox{
+	text-align:center;
+    width: 80%;
+}
+#genderbox{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.gender{
+	margin-left: 20%;
+}
+.birth {
+    margin-left: 20%;
+}
+.birth select {
+    width: 24%;
+}
+.genderchoice {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#id_check{
+	padding: 5px;
+	border: 1px solid rgb(238, 238, 238);
+	border-radius: 5px;
+	font-size:7px;
+	margin-left:5px;
+
+}

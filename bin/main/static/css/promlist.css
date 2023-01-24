@@ -1,0 +1,102 @@
+.writeButton {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.asideProm {
+    position: relative;
+    width: 28%;
+    float: left;
+    height: 95%;
+    padding:20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+.sectionProm {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 95%;
+    overflow:auto;
+}
+.profileProm {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+.profileProm div input {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;    
+}
+.profileProm img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.promContents {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    padding: 5%;
+}
+
+.promtable {
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+.promtable tr {
+    border: 1px solid black;
+}
+.promtable td {
+    padding: 30px;
+    border: 1px solid black;
+}
+.promtable th {
+    padding: 30px;
+    border: 1px solid black;
+    font-size: large;
+    text-align: center;
+}
+
+.promlist-contents textarea {
+    min-height: 5rem;
+    overflow-y: hidden;
+    resize: none;
+    width:100%;
+    margin-bottom:10px;
+}
+
+.writeBtn {
+	display:flex;
+	justify-content:end;
+	margin-bottom : 10px;
+	margin-right: 5px;
+}
+.writeBtn input {
+	margin-right:5px;
+}
+
+.sectionDiary {
+      position: relative;
+      float: right;
+      width: 70%;
+      padding: 5px;
+      border: 1px solid black;
+      margin-top: 10px;   
+      overflow: auto;
+      height:95%;
+}
+
+.promOption {
+	display:flex;
+	flex-flow:column;
+}
+.promOption input {
+	width:100%;
+	margin-bottom:10px;
+}

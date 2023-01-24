@@ -1,0 +1,82 @@
+.guestBook {
+    height: 100%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    overflow:auto;
+}
+.section2guest textarea {
+    width: 100%;
+    height: 157px;
+    border-radius: 20px;
+   	padding:5px;
+}
+.writebook {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.bookContents {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.guestimg {
+    width: 25%;
+    height: 157px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.guestimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.writeButton {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.asideGuest {
+    position: relative;
+    width: 28%;
+    float: left;
+    height: 95%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+.sectionGuest {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 95%;
+}
+.profileGuest {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+}
+.profileGuest div input {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;    
+}
+.profileGuest img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.guestContents {
+    width: 100%;
+    border-radius: 20px;
+}
+.reviseBtn {
+    margin-right: 10px;
+}

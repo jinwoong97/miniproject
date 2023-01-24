@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.example.demo.dao.IvisitorDao">
+
+	<select id="list" resultType="com.example.demo.dto.visitorDto">
+		select visitor.*, USERS.user_name as vi_user_name from visitor INNER JOIN USERS ON visitor.visitor_user_name = USERS.user_id;
+	</select>
+	
+	<insert id="visitor_write">
+		insert into visitor(visitor_contents,visitor_date,visitor_user_name)
+		values(#{ param1 },NOW(),#{ param2 })
+	</insert>
+	
+	<delete id="visitor_delete">
+	  DELETE FROM visitor 
+	  WHERE visitor_idx=#{ param1 }
+	</delete>
+	
+	<select id="viewDto" resultType="com.example.demo.dto.visitorDto">
+		select * from visitor where visitor_idx=#{ param1 }
+	</select>
+	
+	<update id="visitor_modifyAction" parameterType="com.example.demo.dto.visitorDto">
+		update visitor set 
+		visitor_contents=#{visitor_contents}
+		WHERE visitor_idx=#{visitor_idx}
+	</update>
+	
+</mapper>
